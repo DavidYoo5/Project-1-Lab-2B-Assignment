@@ -1,0 +1,379 @@
+/* --- Global Styles --- */
+* {
+  height: viewport-height;
+  width: viewport-width;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #444;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* --- Header & Nav --- */
+.site-header {
+  background: #fff;
+  padding-left: 10;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoAndHeading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-vectors {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 2px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav-home {
+  background-color: #2ecc71;
+}
+
+.nav-portfolio {
+  background-color: #f1c40f;
+}
+
+.nav-blog {
+  background-color: #e74c3c;
+}
+
+.nav-quo {
+  background-color: #3498db;
+}
+
+.nav-chat {
+  background-color: #34495e;
+}
+
+/* --- Hero Section --- */
+.hero {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  text-align: left;
+  z-index: 2;
+}
+
+.hero-content h1,
+.hero-content h2,
+.hero-content h3 {
+  background: white;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  display: table;
+  font-weight: normal;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero-title {
+  border-left: 5px solid #3498db;
+  font-size: 28px;
+}
+
+.hero-subtitle {
+  border-left: 5px solid #e74c3c;
+  font-size: 22px;
+}
+
+.hero-tagline {
+  border-left: 5px solid #f1c40f;
+  font-size: 18px;
+}
+
+/* --- Sections Common --- */
+section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.section-heading {
+  margin-bottom: 40px;
+}
+
+.section-heading h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.section-heading p {
+  color: #888;
+  font-style: italic;
+}
+
+.pink-border {
+  border: 4px solid #ff00ff;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+/* --- Intro --- */
+.intro h2 {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.intro span {
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* --- Grids --- */
+.services-grid,
+.blog-grid,
+.portfolio-grid,
+.client-grid {
+  display: grid;
+  gap: 30px;
+}
+
+.services-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.blog-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.portfolio-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.client-grid {
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+}
+
+/* Icons */
+.icon-box {
+  font-size: 40px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  margin: 0 auto 20px;
+  border: 2px solid;
+}
+
+.yellow {
+  border-color: #f1c40f;
+  color: #f1c40f;
+}
+
+.green {
+  border-color: #2ecc71;
+  color: #2ecc71;
+}
+
+.red {
+  border-color: #e74c3c;
+  color: #e74c3c;
+}
+
+.blue {
+  border-color: #3498db;
+  color: #3498db;
+}
+
+/* Blog Cards */
+.blog-card img,
+.portfolio-grid img {
+  width: 100%;
+  display: block;
+}
+
+.blog-info {
+  background: #3498db;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.blog-info span {
+  float: right;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* --- Footer --- */
+.site-footer {
+  background: #1a2a3a;
+  color: #bdc3c7;
+  padding-top: 40px;
+  text-align: left;
+}
+
+.footer-top {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #2c3e50;
+  padding-bottom: 20px;
+}
+
+.footer-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.footer-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+.footer-h {
+  color: white;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.yellow-underline {
+  border-bottom: 2px solid #f1c40f;
+}
+
+.blue-underline {
+  border-bottom: 2px solid #3498db;
+}
+
+/* Instagram Grid */
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.insta-grid img {
+  width: 100%;
+}
+
+/* Social Squares */
+.social-squares {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.sq {
+  width: 30px;
+  height: 30px;
+}
+
+.sq.blue {
+  background: #3498db;
+}
+
+.sq.orange {
+  background: #e67e22;
+}
+
+.sq.cyan {
+  background: #1abc9c;
+}
+
+.sq.pink {
+  background: #e91e63;
+}
+
+.sq.gold {
+  background: #f1c40f;
+}
+
+/* Newsletter */
+.newsletter {
+  display: flex;
+}
+
+.newsletter input {
+  background: #2c3e50;
+  border: none;
+  padding: 10px;
+  color: white;
+  width: 80%;
+}
+
+.newsletter button {
+  background: #f1c40f;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Bottom Color Bar */
+.footer-bottom-bar {
+  display: flex;
+  height: 10px;
+}
+
+.footer-bottom-bar div {
+  flex: 1;
+}
+
+.bar-green {
+  background: #2ecc71;
+}
+
+.bar-yellow {
+  background: #f1c40f;
+}
+
+.bar-red {
+  background: #e74c3c;
+}
+
+.bar-blue {
+  background: #3498db;
+}
+
+.bar-dark {
+  background: #1a2a3a;
+}
