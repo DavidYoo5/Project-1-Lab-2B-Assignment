@@ -1,14 +1,12 @@
-/* --- Global Styles --- */
-* {
-  height: viewport-height;
-  width: viewport-width;
-}
+/* --- Body --- */
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #444;
   line-height: 1.6;
   text-align: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 /* --- Header & Nav --- */
@@ -45,29 +43,38 @@ body {
 .main-nav a {
   text-decoration: none;
   color: white;
-  padding: 15px 20px;
   font-size: 14px;
   font-weight: bold;
 }
 
 .nav-home {
   background-color: #2ecc71;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-portfolio {
   background-color: #f1c40f;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-blog {
   background-color: #e74c3c;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-quo {
   background-color: #3498db;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-chat {
   background-color: #34495e;
+  padding: 0;
+  margin: 0;
 }
 
 /* --- Hero Section --- */
