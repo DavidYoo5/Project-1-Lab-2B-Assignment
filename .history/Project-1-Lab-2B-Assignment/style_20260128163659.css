@@ -137,21 +137,15 @@ section {
   margin-bottom: 40px;
 }
 
-.section-heading h2 {
-  font-size: 28px;
+.section-heading h3 {
+  font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
 
 .section-heading p {
   color: #888;
-  font-size: 12px;
-}
-
-.services-p {
-  font-size: 12px;
-  text-align: left;
-  max-width: 232px;
+  font-style: italic;
 }
 
 .pink-border {
@@ -206,15 +200,12 @@ section {
   line-height: 80px;
   margin: 0 auto 20px;
   border: 2px solid;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .yellow {
   border-color: #f1c40f;
   color: #f1c40f;
-  
+  align-items: center;
 }
 
 .green {

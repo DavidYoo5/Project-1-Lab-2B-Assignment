@@ -145,13 +145,12 @@ section {
 
 .section-heading p {
   color: #888;
-  font-size: 12px;
+  font-style: italic;
 }
 
 .services-p {
   font-size: 12px;
   text-align: left;
-  max-width: 232px;
 }
 
 .pink-border {
