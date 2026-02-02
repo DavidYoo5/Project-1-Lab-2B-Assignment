@@ -27,8 +27,8 @@
   <body>
     <header class="site-header">
       <div class="header-container">
-        <div class="logoAndHeading">
-          <h1>Metrolics</h1>
+        <div class="logo-and-heading-container">
+          <h1 class="heading">Metrolics</h1>
           <div class="logo-vectors">
             <svg
               id="Layer_2"
@@ -72,38 +72,142 @@
             </svg>
           </div>
         </div>
-        <div class="main-nav-container">
-          <nav class="main-nav">
-            <a href="#" class="nav-home">Home ></a>
-            <a href="#" class="nav-portfolio">Portfolio ></a>
-            <a href="#" class="nav-blog">Blog ></a>
-            <a href="#" class="nav-quo">Quo Vadis? ></a>
-            <a href="#" class="nav-chat">Let's Chat ></a>
-          </nav>
-        </div>
+
+        <nav class="main-nav-container">
+          <div class="main-nav">
+            <div class="nav-container-home">
+              <a href="#" class="nav-home">Home ></a>
+            </div>
+            <div class="nav-container-portfolio">
+              <a href="#" class="nav-portfolio">Portfolio ></a>
+            </div>
+            <div class="nav-container-blog">
+              <a href="#" class="nav-blog">Blog ></a>
+            </div>
+            <div class="nav-container-quo">
+              <a href="#" class="nav-quo">Quo Vadis? ></a>
+            </div>
+            <div class="nav-container-lets-chat">
+              <a href="#" class="nav-chat">Let's Chat ></a>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
 
-    <section class="hero">
+    <div class="hero">
+      <img src="img/00c1b9f08d738d1023baf2062988c56225701209.png" alt="Hero" />
+
       <div class="hero-content">
-        <h1 class="hero-title">Metro Style</h1>
-        <h2 class="hero-subtitle">Quick on the feet</h2>
-        <h3 class="hero-tagline">Metro Styling reinvented</h3>
+        <ul class="hero-text">
+          <li class="hero-title">Metro Style</li>
+          <li class="hero-subtitle">Quick on the feet</li>
+          <li class="hero-tagline">Metro Styling reinvented</li>
+        </ul>
       </div>
-      <img
-        src="img/00c1b9f08d738d1023baf2062988c56225701209.png"
-        alt="Hero Image"
-        class="hero-img"
-      />
-    </section>
+
+      <div class="button-container-2">
+        <div class="button-container">
+          <a href="#" class="button"
+            ><svg
+              width="62"
+              height="62"
+              viewBox="0 0 62 62"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="62"
+                height="62"
+                rx="31"
+                fill="#D9D9D9"
+                fill-opacity="0.64"
+              />
+              <rect
+                x="2"
+                y="2"
+                width="58"
+                height="58"
+                rx="29"
+                stroke="#6D6D6D"
+                stroke-opacity="0.18"
+                stroke-width="4"
+              />
+              <path
+                d="M38.32 46.88L21.36 32L38.32 17.12L40.52 19.4L26.2 32L40.52 44.6L38.32 46.88Z"
+                fill="black"
+                fill-opacity="0.18"
+              />
+            </svg>
+          </a>
+
+          <a href="#" class="button">
+            <svg
+              width="62"
+              height="62"
+              viewBox="0 0 62 62"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <ellipse
+                cx="31.0001"
+                cy="31"
+                rx="31"
+                ry="31"
+                transform="rotate(-180 31.0001 31)"
+                fill="#D9D9D9"
+                fill-opacity="0.64"
+              />
+              <path
+                d="M31 60.0001C14.9838 60.0001 2.00003 47.0163 2.00001 31.0001C2.00001 14.9838 14.9838 2.00011 31 2.00009C47.0162 2.00009 60 14.9838 60 31.0001C60 47.0164 47.0162 60.0001 31 60.0001Z"
+                stroke="#6D6D6D"
+                stroke-opacity="0.18"
+                stroke-width="4"
+              />
+              <mask
+                id="path-3-outside-1_2421_250"
+                maskUnits="userSpaceOnUse"
+                x="23.5"
+                y="12.9131"
+                width="23"
+                height="34"
+                fill="black"
+              >
+                <rect
+                  fill="white"
+                  x="23.5"
+                  y="12.9131"
+                  width="23"
+                  height="34"
+                />
+                <path
+                  d="M27.18 15.0331L44.14 29.9131L27.18 44.7931L24.98 42.5131L39.3 29.9131L24.98 17.3131L27.18 15.0331Z"
+                />
+              </mask>
+              <path
+                d="M27.18 15.0331L44.14 29.9131L27.18 44.7931L24.98 42.5131L39.3 29.9131L24.98 17.3131L27.18 15.0331Z"
+                fill="black"
+                fill-opacity="0.18"
+              />
+              <path
+                d="M27.18 15.0331L27.8395 14.2814L27.1226 13.6524L26.4604 14.3387L27.18 15.0331ZM44.14 29.9131L44.7995 30.6648L45.6563 29.9131L44.7995 29.1614L44.14 29.9131ZM27.18 44.7931L26.4604 45.4875L27.1226 46.1738L27.8395 45.5448L27.18 44.7931ZM24.98 42.5131L24.3194 41.7624L23.5334 42.454L24.2604 43.2075L24.98 42.5131ZM39.3 29.9131L39.9606 30.6639L40.8138 29.9131L39.9606 29.1624L39.3 29.9131ZM24.98 17.3131L24.2604 16.6187L23.5334 17.3722L24.3194 18.0639L24.98 17.3131ZM27.18 15.0331L26.5205 15.7848L43.4805 30.6648L44.14 29.9131L44.7995 29.1614L27.8395 14.2814L27.18 15.0331ZM44.14 29.9131L43.4805 29.1614L26.5205 44.0414L27.18 44.7931L27.8395 45.5448L44.7995 30.6648L44.14 29.9131ZM27.18 44.7931L27.8996 44.0987L25.6996 41.8187L24.98 42.5131L24.2604 43.2075L26.4604 45.4875L27.18 44.7931ZM24.98 42.5131L25.6406 43.2639L39.9606 30.6639L39.3 29.9131L38.6394 29.1624L24.3194 41.7624L24.98 42.5131ZM39.3 29.9131L39.9606 29.1624L25.6406 16.5624L24.98 17.3131L24.3194 18.0639L38.6394 30.6639L39.3 29.9131ZM24.98 17.3131L25.6996 18.0075L27.8996 15.7275L27.18 15.0331L26.4604 14.3387L24.2604 16.6187L24.98 17.3131Z"
+                fill="#6D6D6D"
+                fill-opacity="0.18"
+                mask="url(#path-3-outside-1_2421_250)"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
 
     <section class="intro">
       <h2>Hi folks! We are the <span>Metrolics</span> design studio.</h2>
-      <p>With our help, the sky's the limit to express your creativity!</p>
+      <h2>With our help, the sky's the limit to express your creativity!</h2>
     </section>
 
-   <section class="services">
-      <div class="section-heading pink-border">
+     <section class="services">
+      <div class="section-heading-pink-border">
         <h2>Things That We Do</h2>
         <p>Full service design solutions</p>
       </div>
@@ -278,11 +382,11 @@
         </p>
       </div>
       <div class="client-grid">
-        <div class="client-box"><img src="Client-Krita.png" alt="Krita" /></div>
+        <div class="client-box"><img src="img/Client-Krita.png" alt="Krita" /></div>
         <div class="client-box">
           <img src="img/Client-Inkscape.png" alt="Inkscape" />
         </div>
-        <div class="client-box"><img src="Client-Godot.png" alt="Godot" /></div>
+        <div class="client-box"><img src="img/Client-Godot.png" alt="Godot" /></div>
         <div class="client-box">
           <img src="img/Client-Blender.png" alt="Blender" />
         </div>
