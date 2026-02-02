@@ -200,6 +200,21 @@ section {
   padding: 0 20px;
 }
 
+.section-heading-pink-border {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.section-heading-pink-border h2{
+margin-bottom: 0;
+}
+
+.section-heading-pink-border p {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
 .section-heading {
   margin-bottom: 40px;
 }
@@ -370,7 +385,7 @@ section {
 }
 
 .footer-main {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
