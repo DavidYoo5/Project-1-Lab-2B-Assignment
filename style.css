@@ -217,6 +217,9 @@ margin-bottom: 0;
 
 .section-heading {
   margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .section-heading h2 {
@@ -233,7 +236,13 @@ margin-bottom: 0;
 .services-p {
   font-size: 12px;
   text-align: left;
-  max-width: 232px;
+  max-width: fit-content;
+}
+
+.service-item {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .pink-border {
@@ -743,7 +752,11 @@ margin-bottom: 0;
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-  }
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    }
+
 
   .blog-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -760,7 +773,27 @@ margin-bottom: 0;
     gap: 24px;
   }
 
-  /* --- Footer --- */
+    /* Body text divs */
+
+  .service-item {
+
+     align-items: center;
+     text-align: center;
+     justify-content: center;
+
+    }
+
+    .services-p {
+
+         padding-left: 50;
+   
+
+    }
+
+
+
+  /* Footer */
+
   .footer-main {
     max-width: 90%;
     grid-template-columns: repeat(2, 1fr);
