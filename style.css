@@ -622,62 +622,6 @@ margin-bottom: 0;
 
 
 }
-/* 
-.site-footer::after{
-
-  content: "";
-  position: absolute;
-  bottom: 16px;         
-  left: 50%;
-  transform: translateX(-50%);
-
-  height: 10px;
-
-  background: linear-gradient(
-    to right,
-    #1abc9c 0%,
-    #1abc9c 20%,
-    #f1c40f 20%,
-    #f1c40f 40%,
-    #e74c3c 40%,
-    #e74c3c 60%,
-    #3498db 60%,
-    #3498db 80%,
-    #2c3e50 80%,
-    #2c3e50 100%
-  );
-} */
-
-
-/* Bottom Color Bar */
-/* .footer-bottom-bar {
-  display: flex;
-  height: 10px;
-}
-
-.footer-bottom-bar div {
-  flex: 1;
-}
-
-.bar-green {
-  background: #2ecc71;
-}
-
-.bar-yellow {
-  background: #f1c40f;
-}
-
-.bar-red {
-  background: #e74c3c;
-}
-
-.bar-blue {
-  background: #3498db;
-}
-
-.bar-dark {
-  background: #1a2a3a;
-} */
 
 
 
