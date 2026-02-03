@@ -672,3 +672,117 @@ margin-bottom: 0;
 
 
 
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+  
+  .header-container {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  section {
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 0 16px;
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 90%;
+    height: 380px;          
+    object-fit: cover;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 90%;
+    height: 380px;          
+    top: 290px;             
+  }
+
+  .hero-text {
+    margin-left: 20px;
+    margin-bottom: 60px;
+    font-size: 20px;
+  }
+
+  
+  .hero-title,
+  .hero-subtitle,
+  .hero-tagline {
+    height: 54px;
+  }
+
+  .hero-title { width: 160px; }
+  .hero-subtitle { width: 210px; }
+  .hero-tagline { width: 300px; }
+
+  
+  .button-container {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .button-container-2 {
+    width: 100%;
+    max-width: 90%;
+    height: 380px; 
+  }
+
+  /* --- NAV --- */
+  .main-nav div {
+    width: auto;
+  }
+
+  .main-nav a {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  /* ---  All Grids --- */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .client-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  /* --- Footer --- */
+  .footer-main {
+    max-width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .content-in-footer {
+    max-width: 90%;
+    padding: 0;
+  }
+
+  .footer-top {
+    max-width: 90%;
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    padding-bottom: 20px;
+  }
+
+  /* avatar */
+  .footer-avatar {
+    margin: 0 auto;
+  }
+}
+
