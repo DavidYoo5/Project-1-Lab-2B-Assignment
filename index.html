@@ -96,14 +96,29 @@
     </header>
 
     <div class="hero">
-      <img src="img/00c1b9f08d738d1023baf2062988c56225701209.png" alt="Hero" />
+      <div class="sliders">
+        <div class="imgSlider">
+          <img
+            src="img/00c1b9f08d738d1023baf2062988c56225701209.png"
+            alt="Hero"
+          />
 
-      <div class="hero-content">
-        <ul class="hero-text">
-          <li class="hero-title">Metro Style</li>
-          <li class="hero-subtitle">Quick on the feet</li>
-          <li class="hero-tagline">Metro Styling reinvented</li>
-        </ul>
+          <div class="hero-content">
+            <ul class="hero-text">
+              <li class="hero-title">Metro Style</li>
+              <li class="hero-subtitle">Quick on the feet</li>
+              <li class="hero-tagline">Metro Styling reinvented</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="imgSlider">
+          <img src="img/IMG_2568.JPG" alt="Hero" />
+        </div>
+
+        <div class="imgSlider">
+          <img src="img/IMG_2573.JPG" alt="Hero" />
+        </div>
       </div>
 
       <div class="button-container-2">
@@ -199,6 +214,47 @@
           </a>
         </div>
       </div>
+
+      <script>
+        const slides = document.querySelectorAll(".imgSlider");
+        const prevBtn = document.querySelector(
+          ".button-container a:first-child",
+        );
+        const nextBtn = document.querySelector(
+          ".button-container a:last-child",
+        );
+
+        let currentIndex = 0;
+
+        function showSlide(index) {
+          // hide all slides
+          slides.forEach((slide) => slide.classList.remove("active"));
+
+          // loop logic
+          if (index >= slides.length) currentIndex = 0;
+          if (index < 0) currentIndex = slides.length - 1;
+
+          // show current slide
+          slides[currentIndex].classList.add("active");
+        }
+
+        // next slide
+        nextBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          currentIndex++;
+          showSlide(currentIndex);
+        });
+
+        // previous slide
+        prevBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          currentIndex--;
+          showSlide(currentIndex);
+        });
+
+        // init
+        showSlide(currentIndex);
+      </script>
     </div>
 
     <section class="intro">
