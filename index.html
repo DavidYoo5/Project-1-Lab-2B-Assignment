@@ -96,14 +96,29 @@
     </header>
 
     <div class="hero">
-      <img src="img/00c1b9f08d738d1023baf2062988c56225701209.png" alt="Hero" />
+      <div class="sliders">
+        <div class="imgSlider">
+          <img
+            src="img/00c1b9f08d738d1023baf2062988c56225701209.png"
+            alt="Hero"
+          />
 
-      <div class="hero-content">
-        <ul class="hero-text">
-          <li class="hero-title">Metro Style</li>
-          <li class="hero-subtitle">Quick on the feet</li>
-          <li class="hero-tagline">Metro Styling reinvented</li>
-        </ul>
+          <div class="hero-content">
+            <ul class="hero-text">
+              <li class="hero-title">Metro Style</li>
+              <li class="hero-subtitle">Quick on the feet</li>
+              <li class="hero-tagline">Metro Styling reinvented</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="imgSlider">
+          <img src="img/IMG_2568.JPG" alt="Hero" />
+        </div>
+
+        <div class="imgSlider">
+          <img src="img/IMG_2573.JPG" alt="Hero" />
+        </div>
       </div>
 
       <div class="button-container-2">
@@ -199,6 +214,47 @@
           </a>
         </div>
       </div>
+
+      <script>
+        const slides = document.querySelectorAll(".imgSlider");
+        const prevBtn = document.querySelector(
+          ".button-container a:first-child",
+        );
+        const nextBtn = document.querySelector(
+          ".button-container a:last-child",
+        );
+
+        let currentIndex = 0;
+
+        function showSlide(index) {
+          // hide all slides
+          slides.forEach((slide) => slide.classList.remove("active"));
+
+          // loop logic
+          if (index >= slides.length) currentIndex = 0;
+          if (index < 0) currentIndex = slides.length - 1;
+
+          // show current slide
+          slides[currentIndex].classList.add("active");
+        }
+
+        // next slide
+        nextBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          currentIndex++;
+          showSlide(currentIndex);
+        });
+
+        // previous slide
+        prevBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          currentIndex--;
+          showSlide(currentIndex);
+        });
+
+        // init
+        showSlide(currentIndex);
+      </script>
     </div>
 
     <section class="intro">
@@ -211,6 +267,7 @@
         <h2>Things That We Do</h2>
         <p>Full service design solutions</p>
       </div>
+
       <div class="services-grid">
         <div class="service-item">
           <div class="icon-box yellow">
@@ -315,6 +372,12 @@
             src="img/9d8936101658556ea729473327b08b9089fea2ca.png"
             alt="Blog"
           />
+
+          <div class="date-box-red">
+            <div class="date-box-29">29</div>
+            <div class="date-box-2025">Jan. 2025</div>
+          </div>
+
           <div class="blog-info">
             Sample Image Post <span>Photography</span>
           </div>
@@ -324,6 +387,12 @@
             src="img/9d8936101658556ea729473327b08b9089fea2ca.png"
             alt="Blog"
           />
+
+          <div class="date-box-red">
+            <div class="date-box-29">29</div>
+            <div class="date-box-2025">Jan. 2025</div>
+          </div>
+
           <div class="blog-info">
             Sample Image Post <span>Photography</span>
           </div>
@@ -333,6 +402,12 @@
             src="img/9d8936101658556ea729473327b08b9089fea2ca.png"
             alt="Blog"
           />
+
+          <div class="date-box-red">
+            <div class="date-box-29">29</div>
+            <div class="date-box-2025">Jan. 2025</div>
+          </div>
+
           <div class="blog-info">
             Sample Image Post <span>Photography</span>
           </div>
@@ -342,7 +417,7 @@
 
     <section class="portfolio">
       <div class="section-heading">
-        <h3>Our Best Work. Period.</h3>
+        <h2>Our Best Work. Period.</h2>
         <p>Client happy? We are happy.</p>
       </div>
       <div class="portfolio-grid">
@@ -375,7 +450,7 @@
 
     <section class="clients">
       <div class="section-heading">
-        <h3>Satisfaction Guaranteed</h3>
+        <h2>Satisfaction Guaranteed</h2>
         <p>
           Past clients stoked with our work. We are not happy until YOU are
           happy.
