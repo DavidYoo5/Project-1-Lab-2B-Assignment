@@ -231,6 +231,9 @@ section {
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .section-heading h2 {
@@ -247,7 +250,13 @@ section {
 .services-p {
   font-size: 12px;
   text-align: left;
-  max-width: 232px;
+  max-width: fit-content;
+}
+
+.service-item {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .pink-border {
@@ -582,58 +591,186 @@ section {
   max-width: 272px;
   max-height: 17px;
 }
-/* 
-.site-footer::after{
 
-  content: "";
-  position: absolute;
-  bottom: 16px;         
-  left: 50%;
-  transform: translateX(-50%);
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .site-header {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .header-container {
+    width: 820px;
+    height: auto;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 30px 0 0;
+  }
 
-  height: 10px;
+  .main-nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main-nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+  }
 
-  background: linear-gradient(
-    to right,
-    #1abc9c 0%,
-    #1abc9c 20%,
-    #f1c40f 20%,
-    #f1c40f 40%,
-    #e74c3c 40%,
-    #e74c3c 60%,
-    #3498db 60%,
-    #3498db 80%,
-    #2c3e50 80%,
-    #2c3e50 100%
-  );
-} */
+  .main-nav {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 
-/* Bottom Color Bar */
-/* .footer-bottom-bar {
-  display: flex;
-  height: 10px;
+  .main-nav div {
+    flex: 1;
+    width: auto;
+    height: 80px;
+  }
+
+  .main-nav a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0 0 14px 22px;
+    line-height: 1.2;
+    box-sizing: border-box;
+  }
+
+  section {
+    max-width: 90%;
+    margin: 50px auto;
+    margin-top: 0;
+    padding: 0 16px;
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 90%;
+    height: 380px;
+    object-fit: cover;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 90%;
+    height: 380px;
+    top: 290px;
+  }
+
+  .hero-text {
+    margin-left: 20px;
+    margin-bottom: 60px;
+    font-size: 20px;
+  }
+
+  .hero-title,
+  .hero-subtitle,
+  .hero-tagline {
+    height: 54px;
+  }
+
+  .hero-title {
+    width: 160px;
+  }
+  .hero-subtitle {
+    width: 210px;
+  }
+  .hero-tagline {
+    width: 300px;
+  }
+
+  .button-container {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .button-container-2 {
+    width: 100%;
+    max-width: 90%;
+    height: 380px;
+  }
+
+  /* --- NAV --- */
+  .main-nav div {
+    width: auto;
+  }
+
+  .main-nav a {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  /* ---  All grids --- */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .client-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  /* Body text divs */
+
+  .service-item {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .services-p {
+    padding-left: 50;
+  }
+
+  /* Footer */
+
+  .footer-main {
+    max-width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .content-in-footer {
+    max-width: 90%;
+    padding: 0;
+  }
+
+  .footer-top {
+    max-width: 90%;
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    padding-bottom: 20px;
+  }
+
+  /* centering avatar pic */
+  .footer-avatar {
+    margin: 0 auto;
+  }
+
+  .button-container-2 {
+    display: none;
+  }
 }
-
-.footer-bottom-bar div {
-  flex: 1;
-}
-
-.bar-green {
-  background: #2ecc71;
-}
-
-.bar-yellow {
-  background: #f1c40f;
-}
-
-.bar-red {
-  background: #e74c3c;
-}
-
-.bar-blue {
-  background: #3498db;
-}
-
-.bar-dark {
-  background: #1a2a3a;
-} */
