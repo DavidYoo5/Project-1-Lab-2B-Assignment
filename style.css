@@ -812,5 +812,12 @@ margin-bottom: 0;
   .footer-avatar {
     margin: 0 auto;
   }
+
+
+
+.button-container-2 {
+
+  display: none;
+}
 }
 
